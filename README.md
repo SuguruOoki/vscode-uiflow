@@ -4,6 +4,7 @@
 # UiFlow for Visual Studio Code
 This extension adds support for the UiFlow to Visual Studio Code (vscode), including:
 
+
 * Diagram Preview
 * Export PNG, SVG, JSON, DOT
 * Auto Completion
