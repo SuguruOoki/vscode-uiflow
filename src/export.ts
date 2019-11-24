@@ -73,7 +73,7 @@ export async function saveData(url: string) {
 		value: getUserHome() + path.sep
 	};
 	const outputPath = await resolveExportPath(options);
-	fs.writeFileSync(outputPath, new Buffer(b, 'base64'));
+	fs.writeFileSync(outputPath, Buffer.from(b, 'base64'));
 	vscode.window.showInformationMessage('Successfully Exported PNG.');
 }
 
