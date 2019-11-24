@@ -80,7 +80,7 @@ suite('UiFlow Export Tests', () => {
 		await saveData(url);
 		const buffer = fs.readFileSync(outputPath);
 		const actual = buffer.slice(0, 8);
-		const expected = new Buffer([137, 80, 78, 71, 13, 10, 26, 10]);
+		const expected = Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]);
 		assert.ok(actual.equals(expected), 'PNG file signature not found.');
 	});
 
